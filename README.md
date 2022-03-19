@@ -29,7 +29,7 @@ $ python3 network_scanner.py -h
 $ python3 network_scanner.py -help
 ```
 
-## Gathering MAC and IP addresses
+## Gathering MAC and IP addresses 💻
 
 If we are connected on IP Address: 192.168.20.230 and the Route IP is: 192.168.20.1 and our Subnet mask is 255.255.255.0 then the 0 simply means that that block 1-254 is available to the client, while the rest of the blocks are available to the host.
 
