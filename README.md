@@ -35,11 +35,15 @@ If we are connected on IP Address: 192.168.20.230 and the Route IP is: 192.168.2
 
 Now keep that in mind and look at this image below:
 
-[sub-net table](images/subnet.png)
+![](images/subnetting_c.png)
 
 As you can see the Mask length for the 255.255.255.0 is 24, you can calculate this yourself by converting the Subnet Mask into binary and then counting all the ones. Example: 255.255.255.0 into binary: 1111 1111 . 1111 1111 . 1111 1111 . 0000 0000 So the number of ones are 24.
 
-(Note: You can find out your mask length by typing `ifconfig` on your linux terminal or `ipconfig` on your windows terminal.) 
+Note: You can find out your mask length by typing `ifconfig wlan0` or `ifconfig eth0` or `ifconfig usb0`on your linux terminal for wireless network, ethernet network and usb network respectievely. 
+
+The same can be done on windows terminal using `ipconfig` command and specifying the network type as mentioned above.
+
+![](images/subnet.jpeg)
 
 Your can now specify your target subnet by using `--target 192.168.20.20/24` or `-t 192.168.20.20/24`. For your case the number might not be 24, please check it using the above steps.
 
